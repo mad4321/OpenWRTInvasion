@@ -20,6 +20,32 @@ telnet <router_ip_address>
 
 The script also starts an ftp server at port 21, so you can get access to the filesystem using a GUI (for example [cyberduck](https://cyberduck.io)).
 
+## Change some params
+
+Enable telnet in config
+```
+nvram set telnet_en=1
+```
+
+Change country
+* CN - China
+* HK - Hong Kong
+* TW - Taiwan
+* KR - Korea
+* EU - Europe
+
+```
+nvram set CountryCode=CN
+```
+
+Save config
+```
+nvram commit
+```
+
+and reboot
+
+
 ## Install OpenWrt
 
 After login to the router through telnet, run:
